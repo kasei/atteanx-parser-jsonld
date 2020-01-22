@@ -4,7 +4,7 @@ use warnings;
 use lib '.';
 use inc::Module::Install;
 
-name			'AtteanX::Parser::JSONLD';
+name			'AtteanX-Parser-JSONLD';
 all_from		'lib/AtteanX/Parser/JSONLD.pm';
 author			'Gregory Todd Williams <gwilliams@cpan.org>';
 license			'perl';
