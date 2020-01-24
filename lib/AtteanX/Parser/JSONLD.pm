@@ -30,7 +30,9 @@ package AtteanX::Parser::JSONLD::Handler {
 	use autodie;
 	use Moo;
 	use Attean::RDF;
+	use Encode qw(decode_utf8 encode_utf8);
 	extends 'JSONLD';
+	use namespace::clean;
 	
 	sub default_graph {
 		return iri('tag:gwilliams@cpan.org,2010-01-01:Attean:DEFAULT');
@@ -101,7 +103,7 @@ package AtteanX::Parser::JSONLD::Handler {
 	sub canonical_json {
 		my $class	= shift;
 		my $value	= shift;
-		my $j		= JSON->new->canonical(1);
+		my $j		= JSON->new->utf8->allow_nonref->canonical(1);
 		my $v		= $j->decode($value);
 		return $j->encode($v);
 	}
@@ -111,7 +113,7 @@ package AtteanX::Parser::JSONLD::Handler {
 		my $value	= shift;
 		my $dt		= shift;
 		if ($dt eq 'http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON') {
-			$value	= $self->canonical_json($value);
+			$value	= decode_utf8($self->canonical_json(encode_utf8($value)));
 		}
 		return dtliteral($value, $dt);
 	}
