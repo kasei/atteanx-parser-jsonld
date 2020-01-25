@@ -16,7 +16,7 @@ test_requires	'Test::Modern'				=> 0.012;
 perl_version	'5.014';
 
 requires		'Attean'					=> 0;
-requires		'JSONLD'					=> 0;
+requires		'JSONLD'					=> 0.001;
 requires		'JSON'						=> 4.02;
 
 resources(
