@@ -7,7 +7,7 @@ AtteanX::Parser::JSONLD - JSONLD Parser
 
 =head1 VERSION
 
-This document describes AtteanX::Parser::JSONLD version 0.000_01
+This document describes AtteanX::Parser::JSONLD version 0.001
 
 =head1 SYNOPSIS
 
@@ -17,7 +17,21 @@ This document describes AtteanX::Parser::JSONLD version 0.000_01
 
 =head1 DESCRIPTION
 
-...
+This module implements a JSON-LD 1.11 RDF parser for L<Attean>.
+
+=head1 ROLES
+
+This class consumes the following roles:
+
+=over 4
+
+=item * L<Attean::API::MixedStatementParser>
+
+=item * L<Attean::API::AbbreviatingParser>
+
+=item * L<Attean::API::PullParser>
+
+=back
 
 =head1 METHODS
 
@@ -122,7 +136,7 @@ package AtteanX::Parser::JSONLD::Handler {
 package AtteanX::Parser::JSONLD {
 	use utf8;
 	
-	our $VERSION	=  '0.000_01';
+	our $VERSION	=  '0.001';
 
 	use Attean;
 	use JSON;
@@ -140,7 +154,7 @@ Returns the canonical media type for JSON-LD: application/ld+json.
 =item C<< media_types >>
 
 Returns a list of media types that may be parsed with the JSON-LD parser:
-application/n-quads.
+application/ld+json.
 
 =cut
 

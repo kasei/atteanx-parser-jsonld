@@ -33,7 +33,7 @@ my:project
 
 my:v_0-001
 	a					:Version ;
-	dc:issued			"2020-XX-XX"^^xsd:date ;
+	dc:issued			"2020-01-26"^^xsd:date ;
 	:revision			"0.001" ;
 	dcs:changeset [
 		dcs:item
