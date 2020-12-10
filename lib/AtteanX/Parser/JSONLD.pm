@@ -17,7 +17,7 @@ This document describes AtteanX::Parser::JSONLD version 0.001
 
 =head1 DESCRIPTION
 
-This module implements a JSON-LD 1.11 RDF parser for L<Attean>.
+This module implements a JSON-LD 1.1 RDF parser for L<Attean>.
 
 =head1 ROLES
 
