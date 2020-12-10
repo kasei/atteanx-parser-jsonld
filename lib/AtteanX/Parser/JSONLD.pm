@@ -3,7 +3,7 @@ use warnings;
 
 =head1 NAME
 
-AtteanX::Parser::JSONLD - JSONLD Parser
+AtteanX::Parser::JSONLD - JSON-LD 1.1 RDF Parser
 
 =head1 VERSION
 

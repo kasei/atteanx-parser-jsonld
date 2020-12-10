@@ -1,6 +1,6 @@
 # AtteanX::Parser::JSONLD
 
-## JSONLD RDF Parser
+## JSON-LD 1.1 RDF Parser
 
 ## VERSION
 
