@@ -1,4 +1,4 @@
-use v5.14;
+use v5.18;
 use warnings;
 
 =head1 NAME
@@ -40,7 +40,6 @@ This class consumes the following roles:
 =cut
 
 package AtteanX::Parser::JSONLD::Handler {
-	use v5.18;
 	use autodie;
 	use Moo;
 	use Attean::RDF;
