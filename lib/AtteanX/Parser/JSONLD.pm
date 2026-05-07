@@ -7,7 +7,7 @@ AtteanX::Parser::JSONLD - JSON-LD 1.1 RDF Parser
 
 =head1 VERSION
 
-This document describes AtteanX::Parser::JSONLD version 0.001
+This document describes AtteanX::Parser::JSONLD version 0.002
 
 =head1 SYNOPSIS
 
@@ -135,7 +135,7 @@ package AtteanX::Parser::JSONLD::Handler {
 package AtteanX::Parser::JSONLD {
 	use utf8;
 	
-	our $VERSION	=  '0.001';
+	our $VERSION	=  '0.002';
 
 	use Attean;
 	use JSON;
@@ -247,7 +247,7 @@ Gregory Todd Williams  C<< <gwilliams@cpan.org> >>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2020--2020 Gregory Todd Williams. This
+Copyright (c) 2020--2026 Gregory Todd Williams. This
 program is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.
 
